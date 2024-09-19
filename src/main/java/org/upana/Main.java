@@ -30,8 +30,6 @@ public class Main {
         //si el consumidor es diferente a nulo se empieza a ejecutar el hilo
 
         consumidor1.start();
-
-
         consumidor2.start();
 
         //ahora validar a que todos esperen aser terminados

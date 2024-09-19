@@ -36,13 +36,13 @@ public class Productor implements Runnable {
 
         }catch (IOException | InterruptedException e){
             Thread.currentThread().interrupt(); // si hay una interrupcion vamos  a interrumpir el hilo
-        }finally { // para que se cierre el archivo
+        }/*finally { // para que se cierre el archivo
             try {
                 buffer.producir("END, " + idProductor); // se produjo y se agrego al buffer el END
             }catch (InterruptedException e){
                 Thread.currentThread().interrupt();
             }
-        }
+        }*/
 
     }
 }
